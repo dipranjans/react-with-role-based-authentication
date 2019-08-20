@@ -1,6 +1,6 @@
 <h2>React with role based authentication</h2>
 
-<h4>download the code or just copy the git url and clone the repo in local repo.</h4>
+<h3>Download the code or just copy the git url and clone the repo in local repo.</h3>
 
 <h4>What's inside this Repo.</h4>
 
