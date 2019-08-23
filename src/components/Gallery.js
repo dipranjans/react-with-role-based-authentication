@@ -8,7 +8,9 @@ class Gallery extends Component {
 
   componentDidMount() {
     axios
-      .get(`https://pixabay.com/api/?key=${process.env.PIXBAY_API_KEY}`)
+      .get(
+        `https://pixabay.com/api/?key=${process.env.REACT_APP_PIXBAY_API_KEY}`
+      )
       .then(res => {
         this.setState({
           ...this.state,
