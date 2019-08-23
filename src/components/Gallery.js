@@ -1,20 +1,20 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-const PIXBAY_API_KEY = process.env.REACT_GALLERY_API_KEY;
-
 class Gallery extends Component {
   state = {
     previewImg: []
   };
 
   componentDidMount() {
-    axios.get(`https://pixabay.com/api/?key=${PIXBAY_API_KEY}`).then(res => {
-      this.setState({
-        ...this.state,
-        previewImg: res.data.hits
+    axios
+      .get(`https://pixabay.com/api/?key=${process.env.PIXBAY_API_KEY}`)
+      .then(res => {
+        this.setState({
+          ...this.state,
+          previewImg: res.data.hits
+        });
       });
-    });
   }
 
   render() {
